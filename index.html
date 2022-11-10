@@ -71,9 +71,9 @@ var settings = {
 
     duration:   5, // particle duration in sec
 
-    velocity: 100, // particle velocity in pixels/sec
+    velocity: 200, // particle velocity in pixels/sec
 
-    effect: -0.5, // play with this for a nice effect
+    effect: -1, // play with this for a nice effect
 
     size:      20, // particle size in pixels
 
@@ -396,9 +396,9 @@ var ParticlePool = (function() {
 
       var point = pointOnHeart(t);
 
-      point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
+      point.x = settings.particles.size / 2 + point.x * settings.particles.size / 500;
 
-      point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
+      point.y = settings.particles.size / 2 - point.y * settings.particles.size / 500;
 
       return point;
 
