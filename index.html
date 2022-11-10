@@ -67,13 +67,13 @@ var settings = {
 
   particles: {
 
-    length:   10000, // maximum amount of particles
+    length:   20000, // maximum amount of particles
 
     duration:   10, // particle duration in sec
 
-    velocity: 200, // particle velocity in pixels/sec
+    velocity: 300, // particle velocity in pixels/sec
 
-    effect: -0.85, // play with this for a nice effect
+    effect: -0.75, // play with this for a nice effect
 
     size:      20, // particle size in pixels
 
@@ -456,7 +456,7 @@ var ParticlePool = (function() {
 
     // update time
 
-    var newTime   = new Date().getTime() / 1000,
+    var newTime   = new Date().getTime() / 2000,
 
         deltaTime = newTime - (time || newTime);
 
